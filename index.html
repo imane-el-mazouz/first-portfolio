@@ -10,19 +10,16 @@
   <style>
     .tech-item {
       padding: 20px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
     .tech-img {
       max-width: 80px;
       margin-bottom: 15px;
+
     }
     .tech-item h4 {
       font-size: 18px;
       margin-bottom: 10px;
     }
-    /*mmmm*/
 
     #download{
         background-color: #9500ff;
@@ -40,6 +37,21 @@
       #download:hover {
         background-color: #9500ff;
       }
+    /* Title Section */
+    .section-title h2 {
+      font-size: 32px;
+      color: #333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .section-title p {
+      font-size: 18px;
+      text-align: center;
+      color: #666;
+      margin-bottom: 40px;
+    }
+
 
 
   </style>
@@ -142,9 +154,9 @@
               Diplômée en Développement Web et Web Mobile, ainsi que d'une Licence en Sciences et Techniques, spécialité Ingénierie en Informatique, Électronique et Automatique.
             </p>
             <ul>
-              <li><i class="bi bi-check2-all"></i> <span>Maîtrise du développement Backend et Frontend pour des solutions Full Stack.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Compétence en design UX/UI pour créer des interfaces utilisateur intuitives et attrayantes.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Capacité à résoudre des problématiques complexes avec des solutions innovantes et performantes.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Travail en équipe pour atteindre des objectifs communs.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Gestion efficace du temps pour respecter les échéances.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Autonomie dans la gestion et l'exécution des projets.</span></li>
             </ul>
           </div>
         </div>
@@ -152,20 +164,15 @@
       </div>
 
       <div class="container text-center mt-4">
-        <a href="assets/CV%20IMANE%20EL%20MAZOUZ.pdf" download class="btn btn-primary" id="download" style="background-color: #9500ff;
-        color: #fff;
-        padding: 10px 20px;
-        font-size: 16px;
-        border: none;
-        border-radius: 5px;
-        text-decoration: none;
-        display: inline-block;
-        transition: background-color 0.3s;
-        margin-top: 0px ;"
-        >
-          Télécharger mon CV
+        <a href="assets/CV%20IMANE%20EL%20MAZOUZ.pdf"
+           download
+           class="btn btn-primary"
+           id="download"
+           style="background-color: #9500ff; color: #fff; padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px; text-decoration: none; display: inline-block; transition: background-color 0.3s; margin-top: 0px;">
+          <i class="bi bi-upload" style="margin-right: 8px;"></i> Télécharger mon CV
         </a>
       </div>
+
 
     </section><!-- /About Section -->
 
@@ -230,10 +237,12 @@
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon flex-shrink-0"><i class="bi bi-person-video3"></i></div>
+            <div class="icon flex-shrink-0"><i class="bi bi-tools"></i></div>
             <div>
-              <h4 class="title">Formation et Mentorat</h4>
-              <p class="description">Accompagnement des développeurs et des équipes dans l'apprentissage des meilleures pratiques de développement et des technologies modernes.</p>
+              <h4 class="title">DevOps</h4>
+              <p class="description">
+                Mise en œuvre des pratiques DevOps pour optimiser les processus de développement, déploiement et maintenance des applications.
+              </p>
               <a href="index.html" class="readmore stretched-link"><span>En savoir plus</span><i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
@@ -260,11 +269,26 @@
               "autoplay": {
                 "delay": 5000
               },
-              "slidesPerView": "auto",
+              "slidesPerView": 4,
+              "spaceBetween": 20,
               "pagination": {
                 "el": ".swiper-pagination",
                 "type": "bullets",
                 "clickable": true
+              },
+              "breakpoints": {
+                "640": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 10
+                },
+                "768": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 15
+                },
+                "1024": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 20
+                }
               }
             }
           </script>
@@ -274,7 +298,6 @@
               <div class="tech-item text-center">
                 <img src="assets/img/technologies/java.webp" alt="Java" class="tech-img">
                 <h4>Java</h4>
-                <p>Langage polyvalent pour le développement de logiciels et d'applications backend.</p>
               </div>
             </div>
             <!-- End Technology Item -->
@@ -283,7 +306,6 @@
               <div class="tech-item text-center">
                 <img src="assets/img/technologies/ang.webp" alt="Angular" class="tech-img">
                 <h4>Angular</h4>
-                <p>Framework robuste pour créer des applications web modernes et dynamiques.</p>
               </div>
             </div>
 
@@ -291,7 +313,6 @@
               <div class="tech-item text-center">
                 <img src="assets/img/technologies/spring.png" alt="Spring Boot" class="tech-img">
                 <h4>Spring Boot</h4>
-                <p>Framework puissant pour construire des applications backend performantes.</p>
               </div>
             </div>
 
@@ -299,7 +320,6 @@
               <div class="tech-item text-center">
                 <img src="assets/img/technologies/docker.png" alt="Docker" class="tech-img">
                 <h4>Docker</h4>
-                <p>Outil de conteneurisation pour déployer des applications de manière efficace.</p>
               </div>
             </div>
 
@@ -307,7 +327,6 @@
               <div class="tech-item text-center">
                 <img src="assets/img/technologies/mysql.png" alt="MySQL" class="tech-img">
                 <h4>MySQL</h4>
-                <p>Système de gestion de bases de données relationnelles pour stocker des données.</p>
               </div>
             </div>
 
@@ -315,7 +334,6 @@
               <div class="tech-item text-center">
                 <img src="assets/img/technologies/postgres.png" alt="PostgreSQL" class="tech-img">
                 <h4>PostgreSQL</h4>
-                <p>Système de gestion de bases de données relationnelles avec des fonctionnalités avancées.</p>
               </div>
             </div>
 
@@ -323,7 +341,6 @@
               <div class="tech-item text-center">
                 <img src="assets/img/technologies/trello.png" alt="Trello" class="tech-img">
                 <h4>Trello</h4>
-                <p>Outil de gestion de projets basé sur un système de tableaux et de cartes.</p>
               </div>
             </div>
 
@@ -332,7 +349,6 @@
               <div class="tech-item text-center">
                 <img src="assets/img/technologies/jira.png" alt="Jira" class="tech-img">
                 <h4>Jira</h4>
-                <p>Outil de gestion de projet et de suivi des bugs très utilisé dans le développement logiciel.</p>
               </div>
             </div>
 
@@ -341,7 +357,6 @@
               <div class="tech-item text-center">
                 <img src="assets/img/technologies/figma.png" alt="Figma" class="tech-img">
                 <h4>Figma</h4>
-                <p>Outil de design collaboratif pour la création d'interfaces utilisateur et de prototypes.</p>
               </div>
             </div>
 
@@ -350,7 +365,6 @@
               <div class="tech-item text-center">
                 <img src="assets/img/technologies/uml.png" alt="StarUML" class="tech-img">
                 <h4>StarUML</h4>
-                <p>Outil de modélisation UML pour la conception de diagrammes de systèmes logiciels.</p>
               </div>
             </div>
 
@@ -359,7 +373,6 @@
               <div class="tech-item text-center">
                 <img src="assets/img/technologies/chartjs.png" alt="Chart.js" class="tech-img">
                 <h4>Chart.js</h4>
-                <p>Bibliothèque JavaScript pour la création de graphiques interactifs et animés.</p>
               </div>
             </div>
 
@@ -368,7 +381,6 @@
               <div class="tech-item text-center">
                 <img src="assets/img/technologies/html.png" alt="HTML" class="tech-img">
                 <h4>HTML</h4>
-                <p>Langage de balisage utilisé pour structurer les pages web.</p>
               </div>
             </div>
 
@@ -377,7 +389,6 @@
               <div class="tech-item text-center">
                 <img src="assets/img/technologies/css.png" alt="CSS" class="tech-img">
                 <h4>CSS</h4>
-                <p>Langage de style utilisé pour la mise en forme des pages web.</p>
               </div>
             </div>
 
@@ -386,7 +397,6 @@
               <div class="tech-item text-center">
                 <img src="assets/img/technologies/js.png" alt="JavaScript" class="tech-img">
                 <h4>JavaScript</h4>
-                <p>Langage de programmation pour rendre les pages web interactives.</p>
               </div>
             </div>
 
@@ -395,7 +405,6 @@
               <div class="tech-item text-center">
                 <img src="assets/img/technologies/react.png" alt="React" class="tech-img">
                 <h4>React</h4>
-                <p>Bibliothèque JavaScript pour la création d'interfaces utilisateurs dynamiques.</p>
               </div>
             </div>
 
@@ -404,7 +413,6 @@
               <div class="tech-item text-center">
                 <img src="assets/img/technologies/kubernetes.png" alt="Kubernetes" class="tech-img">
                 <h4>Kubernetes</h4>
-                <p>Plateforme open-source pour l'automatisation du déploiement, de l'extension et de la gestion des applications conteneurisées.</p>
               </div>
             </div>
 
@@ -413,7 +421,6 @@
               <div class="tech-item text-center">
                 <img src="assets/img/technologies/sonar.png" alt="SonarQube" class="tech-img">
                 <h4>SonarQube</h4>
-                <p>Outil de contrôle de la qualité du code et d'analyse statique.</p>
               </div>
             </div>
 
@@ -422,7 +429,6 @@
               <div class="tech-item text-center">
                 <img src="assets/img/technologies/jenkins.png" alt="Jenkins" class="tech-img">
                 <h4>Jenkins</h4>
-                <p>Outil d'intégration continue pour automatiser les processus de développement.</p>
               </div>
             </div>
 
@@ -431,7 +437,6 @@
               <div class="tech-item text-center">
                 <img src="assets/img/technologies/c.png" alt="C Language" class="tech-img">
                 <h4>C</h4>
-                <p>Langage de programmation bas niveau pour le développement de systèmes et applications.</p>
               </div>
             </div>
 
@@ -440,7 +445,6 @@
               <div class="tech-item text-center">
                 <img src="assets/img/technologies/canva.jpg" alt="Canva" class="tech-img">
                 <h4>Canva</h4>
-                <p>Outil de design graphique en ligne pour créer des visuels professionnels facilement.</p>
               </div>
             </div>
 
@@ -449,7 +453,6 @@
               <div class="tech-item text-center">
                 <img src="assets/img/technologies/github.jpeg" alt="GitHub" class="tech-img">
                 <h4>GitHub</h4>
-                <p>Plateforme de gestion de code source et de collaboration pour les développeurs.</p>
               </div>
             </div>
 
@@ -458,7 +461,6 @@
               <div class="tech-item text-center">
                 <img src="assets/img/technologies/git.png" alt="Git" class="tech-img">
                 <h4>Git</h4>
-                <p>Système de contrôle de version distribué pour suivre l'historique du code source.</p>
               </div>
             </div>
 
@@ -483,10 +485,9 @@
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">Tous</li>
+            <li data-filter="*" class="filter-active">Full Stack</li>
             <li data-filter=".filter-app">Back End</li>
             <li data-filter=".filter-product">Front End</li>
-            <li data-filter=".filter-books">Autres</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
@@ -622,7 +623,7 @@
             </div>
 
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/weather.jpg" class="img-fluid" alt="Weather App">
                 <div class="portfolio-info">
@@ -639,7 +640,7 @@
             </div>
 
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/quiz.jpg" class="img-fluid" alt="Quiz Game">
                 <div class="portfolio-info">
@@ -784,7 +785,7 @@
             <div class="pricing-item">
               <h3>Formation en Langues Étrangères (EN/FR)</h3>
               <p class="description">Formation complète pour maîtriser l'anglais et le français dans des contextes professionnels et quotidiens.</p>
-              <h4><sup>PLATEFORME EM LIGNE ALTISSIA </sup> <span> / 2024</span></h4>
+              <h4><sup>PLATEFORME EN LIGNE ALTISSIA </sup> <span> / 2024</span></h4>
               <a href="#" class="cta-btn">Détails</a>
               <p class="text-center small">Formation universitaire spécialisée en langues étrangères</p>
               <ul>
@@ -816,8 +817,55 @@
       </div>
 
     </section><!-- /Certifications Section -->
+    <section style="  border: 4px solid var(--background-color);
+">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Mes Articles et Publications</h2>
+      <p>Explorez mes publications pour découvrir mes idées et contributions dans le domaine du développement et du design.</p>
+    </div><!-- End Section Title -->
 
+    <div class="container">
 
+      <div class="row gy-4"  style="display: flex ; justify-content: center ; gap: 50px">
+
+        <!-- Première Publication -->
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon flex-shrink-0"><i class="bi bi-award"></i></div>
+          <div>
+            <h4 class="title">Certification en Développement Front-End</h4>
+            <p class="description">Obtention d'une certification en React, HTML, CSS, JavaScript et Bootstrap, démontrant une maîtrise des technologies essentielles pour le développement Front-End moderne.</p>
+            <a href="https://www.linkedin.com/posts/imane-el-mazouz21_webdevelopment-certificationacquired-css-activity-7260306299970547713-XLE3?utm_source=share&utm_medium=member_desktop" target="_blank" class="readmore stretched-link">
+              <span>Voir la Certification sur LinkedIn</span><i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div><!-- End Blog Item -->
+
+        <!-- Deuxième Publication -->
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon flex-shrink-0"><i class="bi bi-robot"></i></div>
+          <div>
+            <h4 class="title">Participation à l'Atelier sur les Intelligences Artificielles Génératives</h4>
+            <p class="description">Exploration des concepts et des applications des intelligences artificielles génératives lors d'un atelier inspirant.</p>
+            <a href="https://www.linkedin.com/posts/imane-el-mazouz21_ia-intelligenceartificielle-formation-activity-7262092978385563648-naaf?utm_source=share&utm_medium=member_desktop" target="_blank" class="readmore stretched-link">
+              <span>Voir les Détails sur Linkedin</span><i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div><!-- End Blog Item -->
+
+        <!-- Troisième Publication -->
+
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="blog.html" class="readmore stretched-link">
+          <span>En savoir plus</span>
+          <i class="bi bi-plus-circle"></i>
+        </a>
+      </div>
+
+    </div><!-- /Blogs Section -->
+
+    </section>
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
