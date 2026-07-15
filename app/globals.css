@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --c-surface: #0a0a0f;
+  --c-surface-raised: #121218;
+  --c-surface-border: #1f1f28;
+  --c-white: #ffffff;
+  --c-zinc-200: #e4e4e7;
+  --c-zinc-300: #d4d4d8;
+  --c-zinc-400: #a1a1aa;
+  --c-zinc-500: #71717a;
+  --c-zinc-600: #52525b;
+}
+
+:root[data-theme="light"] {
+  --c-surface: #ffffff;
+  --c-surface-raised: #f6f6f8;
+  --c-surface-border: #e4e4e7;
+  --c-white: #101014;
+  --c-zinc-200: #27272a;
+  --c-zinc-300: #3f3f46;
+  --c-zinc-400: #52525b;
+  --c-zinc-500: #71717a;
+  --c-zinc-600: #8b8b93;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --c-surface: #ffffff;
+    --c-surface-raised: #f6f6f8;
+    --c-surface-border: #e4e4e7;
+    --c-white: #101014;
+    --c-zinc-200: #27272a;
+    --c-zinc-300: #3f3f46;
+    --c-zinc-400: #52525b;
+    --c-zinc-500: #71717a;
+    --c-zinc-600: #8b8b93;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface text-zinc-200 font-sans antialiased transition-colors duration-300;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .section {
+    @apply py-24 md:py-32 px-6 md:px-10;
+  }
+
+  .section-inner {
+    @apply max-w-6xl mx-auto;
+  }
+
+  .eyebrow {
+    @apply text-sm tracking-[0.3em] uppercase text-accent-light font-medium;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-5xl font-semibold text-white mt-3 mb-4;
+  }
+
+  .section-lead {
+    @apply text-zinc-400 max-w-2xl text-lg;
+  }
+
+  .card {
+    @apply bg-surface-raised border border-surface-border rounded-2xl;
+  }
+
+  .btn-accent {
+    @apply inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-medium text-white transition-all hover:bg-accent-light hover:shadow-[0_0_30px_-5px_rgba(149,0,255,0.6)];
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 rounded-full border border-surface-border px-6 py-3 text-sm font-medium text-zinc-200 transition-all hover:border-accent hover:text-white;
+  }
+}
+
+::selection {
+  background: #9500ff;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--c-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--c-surface-border);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9500ff;
+}
