@@ -42,7 +42,7 @@ export default function Footer() {
 
         <p className="text-xs text-zinc-600">
           © {new Date().getFullYear()} <span className="text-zinc-400">EL MAZOUZ Imane</span> —
-          Tous droits réservés
+          All rights reserved
         </p>
       </div>
     </footer>

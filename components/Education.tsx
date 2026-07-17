@@ -4,10 +4,10 @@ export default function Education() {
   return (
     <section id="formation" className="section bg-surface-raised/40">
       <div className="section-inner">
-        <p className="eyebrow">Parcours académique</p>
-        <h2 className="section-title">Formation</h2>
+        <p className="eyebrow">Academic background</p>
+        <h2 className="section-title">Education</h2>
         <p className="section-lead">
-          Un parcours académique pluridisciplinaire, entre ingénierie, informatique et data.
+          A multidisciplinary academic path, spanning engineering, computer science and data.
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">

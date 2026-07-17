@@ -4,11 +4,11 @@ export default function Experience() {
   return (
     <section id="experience" className="section bg-surface-raised/40">
       <div className="section-inner">
-        <p className="eyebrow">Parcours professionnel</p>
-        <h2 className="section-title">Expériences</h2>
+        <p className="eyebrow">Professional background</p>
+        <h2 className="section-title">Experience</h2>
         <p className="section-lead">
-          Un aperçu de mes missions en développement Full Stack, de la conception à la mise en
-          production.
+          An overview of my Full Stack development assignments, from design to production
+          deployment.
         </p>
 
         <div className="relative mt-14 pl-8 md:pl-10">
@@ -30,7 +30,7 @@ export default function Experience() {
                     </h3>
                     {exp.current && (
                       <span className="text-xs rounded-full bg-accent/15 text-accent-light px-3 py-1">
-                        Poste actuel
+                        Current position
                       </span>
                     )}
                   </div>
@@ -46,6 +46,18 @@ export default function Experience() {
                       </li>
                     ))}
                   </ul>
+                  {exp.stack.length > 0 && (
+                    <div className="flex flex-wrap gap-2 mt-4 pt-4 border-t border-surface-border">
+                      {exp.stack.map((tech) => (
+                        <span
+                          key={tech}
+                          className="text-xs rounded-full border border-surface-border px-3 py-1.5 text-zinc-400"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             ))}

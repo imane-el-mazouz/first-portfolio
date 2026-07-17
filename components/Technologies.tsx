@@ -7,10 +7,10 @@ export default function Technologies() {
   return (
     <section id="technologies" className="section overflow-hidden">
       <div className="section-inner text-center">
-        <p className="eyebrow">Ma boîte à outils</p>
+        <p className="eyebrow">My toolbox</p>
         <h2 className="section-title">Technologies</h2>
         <p className="section-lead mx-auto">
-          Découvrez les technologies que j&apos;utilise dans mes projets.
+          Discover the technologies I use in my projects.
         </p>
       </div>
 

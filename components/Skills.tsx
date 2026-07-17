@@ -4,10 +4,10 @@ export default function Skills() {
   return (
     <section id="skills" className="section">
       <div className="section-inner">
-        <p className="eyebrow">Boîte à outils</p>
-        <h2 className="section-title">Compétences</h2>
+        <p className="eyebrow">Toolbox</p>
+        <h2 className="section-title">Skills</h2>
         <p className="section-lead">
-          Un socle technique large, du développement Full Stack à l&apos;ingénierie de données.
+          A broad technical foundation, from Full Stack development to data engineering.
         </p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">

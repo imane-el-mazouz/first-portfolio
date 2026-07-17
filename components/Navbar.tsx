@@ -4,12 +4,11 @@ import { useEffect, useState } from "react";
 import ThemeToggle from "./ThemeToggle";
 
 const links = [
-  { href: "#hero", label: "Accueil" },
-  { href: "#about", label: "À propos" },
-  { href: "#experience", label: "Expériences" },
-  { href: "#skills", label: "Compétences" },
+  { href: "#about", label: "About" },
+  { href: "#experience", label: "Experience" },
+  { href: "#skills", label: "Skills" },
   { href: "#portfolio", label: "Portfolio" },
-  { href: "#formation", label: "Formation" },
+  { href: "#formation", label: "Education" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -42,7 +41,7 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-zinc-300 hover:text-white transition-colors"
+              className="text-sm text-zinc-300 hover:text-accent-light transition-colors"
             >
               {link.label}
             </a>
@@ -77,7 +76,7 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="text-zinc-300 hover:text-white transition-colors"
+              className="text-zinc-300 hover:text-accent-light transition-colors"
             >
               {link.label}
             </a>
@@ -87,7 +86,7 @@ export default function Navbar() {
             download
             className="inline-flex w-fit items-center gap-2 rounded-full bg-accent px-4 py-2 text-sm font-medium text-white"
           >
-            <i className="bi bi-download" /> Télécharger CV
+            <i className="bi bi-download" /> Download CV
           </a>
         </nav>
       )}

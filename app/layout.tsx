@@ -16,9 +16,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Imane El Mazouz — Développeuse Full Stack",
+  title: "Imane EL MAZOUZ",
   description:
-    "Portfolio d'Imane El Mazouz, développeuse Full Stack Java spécialisée en Angular, Spring Boot et architectures modernes.",
+    "Portfolio of Imane El Mazouz, a Java Full Stack Developer specialized in Angular, Spring Boot and modern architectures.",
   icons: {
     icon: "/img/favicon/favicon.jpg",
     apple: "/img/favicon/apple-touch-icon.png",
@@ -29,7 +29,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="fr" className={`${inter.variable} ${poppins.variable}`}>
+    <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
       <head>
         <link
           rel="stylesheet"

@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { contactInfo } from "@/lib/data";
 
-const words = ["Data Engineer Junior", "Développeuse Full Stack"];
+const words = ["Junior Data Engineer", "Full Stack Developer"];
 
 export default function Hero() {
   const [wordIndex, setWordIndex] = useState(0);
@@ -49,21 +49,21 @@ export default function Hero() {
       </div>
 
       <div className="text-center max-w-3xl">
-        <p className="eyebrow mb-6">Bienvenue sur mon portfolio</p>
+        <p className="eyebrow mb-6">Welcome to my portfolio</p>
         <h1 className="text-4xl md:text-6xl font-display font-bold text-white leading-tight">
           EL MAZOUZ Imane
         </h1>
         <p className="mt-6 text-xl md:text-2xl text-zinc-400 h-8">
-          Je suis <span className="text-accent-light font-medium">{display}</span>
+          I&apos;m a <span className="text-accent-light font-medium">{display}</span>
           <span className="animate-pulse">|</span>
         </p>
 
         <div className="mt-10 flex items-center justify-center gap-4">
           <a href="#contact" className="btn-accent">
-            Me contacter <i className="bi bi-arrow-right" />
+            Contact me <i className="bi bi-arrow-right" />
           </a>
           <a href="#portfolio" className="btn-outline">
-            Voir mes projets
+            View my projects
           </a>
         </div>
 

@@ -4,11 +4,11 @@ export default function Services() {
   return (
     <section id="services" className="section bg-surface-raised/40">
       <div className="section-inner">
-        <p className="eyebrow">Ce que je propose</p>
+        <p className="eyebrow">What I offer</p>
         <h2 className="section-title">Services</h2>
         <p className="section-lead">
-          Des solutions complètes et sur mesure en développement web Full Stack, ainsi que des
-          services de design UX/UI pour une expérience utilisateur optimale.
+          Complete, tailored solutions in Full Stack web development, along with UX/UI design
+          services for an optimal user experience.
         </p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">

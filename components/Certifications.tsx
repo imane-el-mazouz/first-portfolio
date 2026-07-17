@@ -4,10 +4,10 @@ export default function Certifications() {
   return (
     <section id="certifications" className="section">
       <div className="section-inner">
-        <p className="eyebrow">Reconnaissances</p>
+        <p className="eyebrow">Recognitions</p>
         <h2 className="section-title">Certifications</h2>
         <p className="section-lead">
-          Des certifications qui complètent mon parcours technique et linguistique.
+          Certifications that complement my technical and language background.
         </p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">

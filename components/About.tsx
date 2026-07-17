@@ -2,17 +2,17 @@ import Image from "next/image";
 import { profile } from "@/lib/data";
 
 const points = [
-  "Travail en équipe pour atteindre des objectifs communs.",
-  "Gestion efficace du temps pour respecter les échéances.",
-  "Autonomie dans la gestion et l'exécution des projets.",
+  "Teamwork to achieve shared goals.",
+  "Effective time management to meet deadlines.",
+  "Autonomy in managing and executing projects.",
 ];
 
 export default function About() {
   return (
     <section id="about" className="section">
       <div className="section-inner">
-        <p className="eyebrow">Qui suis-je</p>
-        <h2 className="section-title">À propos</h2>
+        <p className="eyebrow">Who I am</p>
+        <h2 className="section-title">About</h2>
 
         <div className="grid md:grid-cols-[minmax(0,320px)_1fr] gap-12 items-start mt-12">
           <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-surface-border">
@@ -39,7 +39,7 @@ export default function About() {
             </ul>
 
             <a href="/cv.pdf" download className="btn-accent">
-              <i className="bi bi-upload" /> Télécharger mon CV
+              <i className="bi bi-upload" /> Download my CV
             </a>
           </div>
         </div>

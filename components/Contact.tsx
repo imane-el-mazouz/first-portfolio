@@ -30,26 +30,19 @@ export default function Contact() {
   return (
     <section id="contact" className="section bg-surface-raised/40">
       <div className="section-inner">
-        <p className="eyebrow">Discutons</p>
+        <p className="eyebrow">Let&apos;s talk</p>
         <h2 className="section-title">Contact</h2>
         <p className="section-lead">
-          Je suis à votre écoute ! N&apos;hésitez pas à me contacter pour toute question ou
-          demande d&apos;information. Je suis ravie de vous aider.
+          I&apos;m all ears! Feel free to reach out with any question or request for
+          information. I&apos;d be happy to help.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-6 mt-12 mb-12">
+        <div className="grid md:grid-cols-2 gap-6 mt-12 mb-12">
           <div className="card p-6 flex items-center gap-4">
             <i className="bi bi-geo-alt text-accent-light text-2xl" />
             <div>
-              <h3 className="text-white font-semibold mb-1">Adresse</h3>
+              <h3 className="text-white font-semibold mb-1">Address</h3>
               <p className="text-sm text-zinc-400">{contactInfo.address}</p>
-            </div>
-          </div>
-          <div className="card p-6 flex items-center gap-4">
-            <i className="bi bi-telephone text-accent-light text-2xl" />
-            <div>
-              <h3 className="text-white font-semibold mb-1">Appelez-moi</h3>
-              <p className="text-sm text-zinc-400">{contactInfo.phone}</p>
             </div>
           </div>
           <div className="card p-6 flex items-center gap-4">
@@ -70,21 +63,21 @@ export default function Contact() {
             type="text"
             name="name"
             required
-            placeholder="Votre nom"
+            placeholder="Your name"
             className="bg-surface border border-surface-border rounded-lg px-4 py-3 text-sm text-white placeholder:text-zinc-500 focus:outline-none focus:border-accent"
           />
           <input
             type="email"
             name="email"
             required
-            placeholder="Votre email"
+            placeholder="Your email"
             className="bg-surface border border-surface-border rounded-lg px-4 py-3 text-sm text-white placeholder:text-zinc-500 focus:outline-none focus:border-accent"
           />
           <input
             type="text"
             name="subject"
             required
-            placeholder="Sujet"
+            placeholder="Subject"
             className="md:col-span-2 bg-surface border border-surface-border rounded-lg px-4 py-3 text-sm text-white placeholder:text-zinc-500 focus:outline-none focus:border-accent"
           />
           <textarea
@@ -97,18 +90,18 @@ export default function Contact() {
 
           <div className="md:col-span-2 flex items-center justify-between gap-4 flex-wrap">
             <p className="text-sm">
-              {status === "loading" && <span className="text-zinc-400">Envoi en cours...</span>}
+              {status === "loading" && <span className="text-zinc-400">Sending...</span>}
               {status === "success" && (
                 <span className="text-emerald-400">
-                  Votre message a été envoyé. Merci beaucoup !
+                  Your message has been sent. Thank you very much!
                 </span>
               )}
               {status === "error" && (
-                <span className="text-red-400">Une erreur s&apos;est produite. Réessayez.</span>
+                <span className="text-red-400">An error occurred. Please try again.</span>
               )}
             </p>
             <button type="submit" disabled={status === "loading"} className="btn-accent">
-              Envoyer le message <i className="bi bi-send" />
+              Send message <i className="bi bi-send" />
             </button>
           </div>
         </form>
