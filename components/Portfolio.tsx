@@ -21,7 +21,7 @@ const categoryIcon: Record<PortfolioCategory, string> = {
 const PAGE_SIZE = 6;
 
 export default function Portfolio() {
-  const [active, setActive] = useState<(typeof filters)[number]>("Tous");
+  const [active, setActive] = useState<(typeof filters)[number]>("All");
   const [page, setPage] = useState(1);
 
   const items =
